@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tamaras webbplats om henne själv och hennes intresse för hundar.">
+    <title>Min hobby | Tamaras värld</title>
+    <style>
+        :root {
+            --bg: #fff8f5;
+            --surface: #ffffff;
+            --text: #2d2523;
+            --accent: #b84f70;
+            --accent-dark: #8e3653;
+            --border: #ead8d2;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+        header {
+            background: var(--accent);
+            color: #fff;
+            padding: 1.5rem 1rem;
+        }
+        header h1 { margin: 0 0 0.75rem; }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        nav a:hover, nav a:focus { text-decoration: underline; }
+        main {
+            width: min(100% - 2rem, 900px);
+            margin: 2rem auto;
+        }
+        section {
+            background: var(--surface);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+        .portrait { max-width: 430px; }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+        }
+        .gallery figure { margin: 0; }
+        figcaption { font-size: 0.95rem; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background: #fff;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th { background: #f7e7ec; }
+        form { max-width: 650px; }
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: 700;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 0.7rem;
+            margin-top: 0.35rem;
+            border: 1px solid #bca9a4;
+            border-radius: 6px;
+            font: inherit;
+        }
+        textarea { min-height: 150px; resize: vertical; }
+        fieldset {
+            margin-top: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        fieldset label {
+            display: inline-block;
+            margin: 0.5rem 1rem 0.5rem 0;
+            font-weight: 400;
+        }
+        fieldset input { width: auto; margin-right: 0.35rem; }
+        button {
+            margin-top: 1rem;
+            padding: 0.75rem 1.25rem;
+            border: 0;
+            border-radius: 6px;
+            background: var(--accent-dark);
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        button:hover, button:focus { background: var(--accent); }
+        footer {
+            margin-top: 2rem;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            background: #2d2523;
+            color: #fff;
+        }
+        footer a { color: #fff; }
+        .external-link { font-weight: 700; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tamaras värld</h1>
+        <nav aria-label="Huvudmeny">
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="hobby.html">Min hobby</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+<section>
+    <h2>Min hobby: hundar</h2>
+    <p>Hundar är ett stort intresse för mig. Jag tycker om deras personlighet, energi och sällskap. Att ta promenader, leka och bara vara tillsammans är sådant som gör vardagen roligare. På den här sidan kan du se några bilder och läsa en liten faktatabell om hundar.</p>
+</section>
+
+<section>
+    <h2>Bilder på min hund</h2>
+    <div class="gallery">
+        <figure>
+            <img src="images/hund-soffa.jpg" alt="Liten ljus hund som sitter på en blå filt i en soffa">
+            <figcaption>Min hund sitter på soffan och tittar mot kameran.</figcaption>
+        </figure>
+        <figure>
+            <img src="images/Hund2.png" alt="Ljus liten hund som sitter på ett träbord med en napp i munnen">
+            <figcaption>En bild från när hunden var yngre.</figcaption>
+        </figure>
+    </div>
+</section>
+
+<section>
+    <h2>Fakta om hundar</h2>
+    <table>
+        <caption>Exempel på vanliga hundaktiviteter och vad de ger hunden</caption>
+        <thead>
+            <tr>
+                <th scope="col">Aktivitet</th>
+                <th scope="col">Tidsåtgång</th>
+                <th scope="col">Fördel</th>
+                <th scope="col">Passar bäst</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Promenad</td>
+                <td>30–60 min</td>
+                <td>Motion och nya intryck</td>
+                <td>De flesta hundar</td>
+            </tr>
+            <tr>
+                <td>Lek</td>
+                <td>10–30 min</td>
+                <td>Aktivering och kontakt</td>
+                <td>Alla åldrar</td>
+            </tr>
+            <tr>
+                <td>Träning</td>
+                <td>5–20 min</td>
+                <td>Hjärngympa och samarbete</td>
+                <td>Alla hundar</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Läs mer</h2>
+    <p>Om du vill lära dig mer om hundar kan du besöka
+        <a class="external-link" href="https://sv.wikipedia.org/wiki/Hund" target="_blank" rel="noopener">Wikipedia – Hund</a>.
+    </p>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tamara | <a href="kontakt.html">Kontakta mig</a></p>
+    </footer>
+</body>
+</html>
