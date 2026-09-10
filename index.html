@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tamaras webbplats om henne själv och hennes intresse för hundar.">
     <title>Startsida | Tamaras värld</title>
+
     <style>
         :root {
             --bg: #fff8f5;
@@ -14,7 +15,11 @@
             --accent-dark: #8e3653;
             --border: #ead8d2;
         }
-        * { box-sizing: border-box; }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -22,12 +27,17 @@
             color: var(--text);
             background: var(--bg);
         }
+
         header {
             background: var(--accent);
             color: #fff;
             padding: 1.5rem 1rem;
         }
-        header h1 { margin: 0 0 0.75rem; }
+
+        header h1 {
+            margin: 0 0 0.75rem;
+        }
+
         nav ul {
             list-style: none;
             display: flex;
@@ -36,16 +46,23 @@
             margin: 0;
             padding: 0;
         }
+
         nav a {
             color: #fff;
             font-weight: 700;
             text-decoration: none;
         }
-        nav a:hover, nav a:focus { text-decoration: underline; }
+
+        nav a:hover,
+        nav a:focus {
+            text-decoration: underline;
+        }
+
         main {
             width: min(100% - 2rem, 900px);
             margin: 2rem auto;
         }
+
         section {
             background: var(--surface);
             padding: 1.5rem;
@@ -53,6 +70,7 @@
             border: 1px solid var(--border);
             border-radius: 12px;
         }
+
         img {
             display: block;
             max-width: 100%;
@@ -60,33 +78,56 @@
             border-radius: 10px;
             margin: 1rem 0;
         }
-        .portrait { max-width: 430px; }
+
+        .portrait {
+            max-width: 430px;
+        }
+
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 1rem;
         }
-        .gallery figure { margin: 0; }
-        figcaption { font-size: 0.95rem; }
+
+        .gallery figure {
+            margin: 0;
+        }
+
+        figcaption {
+            font-size: 0.95rem;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 1rem;
             background: #fff;
         }
-        th, td {
+
+        th,
+        td {
             border: 1px solid var(--border);
             padding: 0.75rem;
             text-align: left;
         }
-        th { background: #f7e7ec; }
-        form { max-width: 650px; }
+
+        th {
+            background: #f7e7ec;
+        }
+
+        form {
+            max-width: 650px;
+        }
+
         label {
             display: block;
             margin-top: 1rem;
             font-weight: 700;
         }
-        input, textarea, select {
+
+        input,
+        textarea,
+        select {
             width: 100%;
             padding: 0.7rem;
             margin-top: 0.35rem;
@@ -94,18 +135,29 @@
             border-radius: 6px;
             font: inherit;
         }
-        textarea { min-height: 150px; resize: vertical; }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
         fieldset {
             margin-top: 1rem;
             border: 1px solid var(--border);
             border-radius: 8px;
         }
+
         fieldset label {
             display: inline-block;
             margin: 0.5rem 1rem 0.5rem 0;
             font-weight: 400;
         }
-        fieldset input { width: auto; margin-right: 0.35rem; }
+
+        fieldset input {
+            width: auto;
+            margin-right: 0.35rem;
+        }
+
         button {
             margin-top: 1rem;
             padding: 0.75rem 1.25rem;
@@ -116,7 +168,12 @@
             font-weight: 700;
             cursor: pointer;
         }
-        button:hover, button:focus { background: var(--accent); }
+
+        button:hover,
+        button:focus {
+            background: var(--accent);
+        }
+
         footer {
             margin-top: 2rem;
             padding: 1.5rem 1rem;
@@ -124,13 +181,22 @@
             background: #2d2523;
             color: #fff;
         }
-        footer a { color: #fff; }
-        .external-link { font-weight: 700; }
+
+        footer a {
+            color: #fff;
+        }
+
+        .external-link {
+            font-weight: 700;
+        }
     </style>
 </head>
+
 <body>
+
     <header>
         <h1>Tamaras värld</h1>
+
         <nav aria-label="Huvudmeny">
             <ul>
                 <li><a href="index.html">Startsida</a></li>
@@ -141,23 +207,60 @@
     </header>
 
     <main>
-        
-<section>
-    <h2>Välkommen!</h2>
-    <p>Jag heter Tamara och det här är min personliga webbplats. Här presenterar jag mig själv och berättar lite om ett av mina största intressen: hundar.</p>
-    <p>Jag kommer från <strong>Malmö</strong>. På fritiden tycker jag om att umgås med människor jag tycker om, koppla av och framför allt spendera tid med min hund.</p>
-</section>
 
-<section>
-    <h2>Lite om mig</h2>
-    <p>Jag tycker om att lära mig nya saker och att prova olika aktiviteter. Min hund är en viktig del av min vardag och därför valde jag att låta hundar vara temat för min hobbysida.</p>
-    <img class="portrait" src="images/Tamara.jpeg" alt="Porträtt av Tamara sittande i en bil och leende mot kameran">
-</section>
+        <section>
+            <h2>Välkommen till Tamaras webbplats!</h2>
+
+            <p>
+                Jag heter Tamara och det här är min personliga webbplats.
+                Här presenterar jag mig själv och berättar lite om ett av
+                mina största intressen: hundar.
+            </p>
+
+            <p>
+                Här kan du läsa mer om mig, mina intressen, mina hobbyer
+                och min kärlek till hundar.
+            </p>
+
+            <p>
+                Jag kommer från <strong>Malmö</strong>. På fritiden tycker jag
+                om att umgås med människor jag tycker om, koppla av och
+                framför allt spendera tid med min hund.
+            </p>
+        </section>
+
+        <section>
+            <h2>Lite om mig</h2>
+
+            <p>
+                Jag tycker om att lära mig nya saker och att prova olika
+                aktiviteter. Min hund är en viktig del av min vardag och
+                därför valde jag att låta hundar vara temat för min hobbysida.
+            </p>
+
+            <img
+                class="portrait"
+                src="images/Tamara.jpeg"
+                alt="Porträtt av Tamara sittande i en bil och leende mot kameran"
+            >
+        </section>
+
+        <section>
+            <h2>Välkommen till min webbplats</h2>
+
+            <p>
+                Här kan du läsa mer om mig, mina intressen och mina hobbyer.
+            </p>
+        </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Tamara | <a href="kontakt.html">Kontakta mig</a></p>
+        <p>
+            &copy; 2026 Tamara |
+            <a href="kontakt.html">Kontakta mig</a>
+        </p>
     </footer>
+
 </body>
 </html>
